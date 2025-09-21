@@ -58,8 +58,23 @@ users, and they may redistribute it further if they wish.
 
 ## Example of how to make it run with virtualenv:
 
+Install Dependencies:
+
+**Debian/Ubuntu (Apt):**
+
 ```
 apt install python3-pip python3 python3-venv gcc
+```
+
+**Fedora (Dnf)**
+
+```
+sudo dnf install python3 python3-pip python3-devel gcc
+```
+
+Create Virtual Environment:
+
+```
 VENV=/opt/mlat-python-venv
 rm -rf $VENV
 python3 -m venv $VENV
